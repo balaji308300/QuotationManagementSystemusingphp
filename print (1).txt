@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5500/printpage2.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill portal</title>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+      @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: "nunito", sans-serif;
+        margin: 5px;
+        padding: 0;
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+      }
+      .heading {
+        height: 70px;
+        width: 800px;
+        background-color: #0b17a0;
+        padding: 10px 20px;
+        color: white;
+        margin-left: 360px;
+        margin-top: 3px;
+        margin-bottom: 10px;
+        align-items: center;
+        position: absolute;
+      }
+      img {
+        height: 50px;
+        width: 50px;
+      }
+      h1 {
+        margin-bottom: 20px;
+        margin-left: 75px;
+        margin-top: -55px;
+      }
+      .details {
+        position: absolute;
+        color: white;
+        text-align: right;
+        margin-top: -80px;
+        margin-left: 630px;
+      }
+      .quotation-details {
+        height: 90px;
+        width: 834px;
+        border: 1px solid black;
+        position: absolute;
+        background-color: white;
+        margin-top: 100px;
+        margin-left: 360px;
+        padding: 2px;
+      }
+      .q-details {
+        text-align: left;
+        margin-left: 550px;
+        margin-top: -50px;
+      }
+      h2,
+      .email {
+        margin-left: 10px;
+      }
+      .bill {
+        height: 420px;
+        width: 837px;
+        border: 1px solid black;
+        margin-top: 203px;
+        margin-bottom: 20px;
+        position: absolute;
+        margin-left: 360px;
+        padding: -2px;
+      }
+      table {
+        width: 810px;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        margin-left: 10px;
+      }
+
+      th,
+      td {
+        border: 2px solid #d5d3d3;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        border-color: rgb(147, 146, 146);
+        border-width: 2px;
+        box-shadow: 0px 0px 5px 0.5px gray;
+      }
+      th,
+      td {
+        background-color: #f2f2f2;
+        text-align: center;
+      }
+
+      .sub-total {
+        justify-content: center;
+      }
+      .total {
+        text-align: right;
+      }
+      tfoot {
+        text-align: center;
+      }
+      .button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: -5px;
+        margin-left: 12px;
+      }
+      .footer {
+        width: 840px;
+        height: 50px;
+        margin-left: 360px;
+        display: flex;
+        flex-direction: column;
+        color: #777;
+        padding-top: 2px;
+        border: 1px solid black;
+        position: fixed;
+        margin-top: 630px;
+        text-align: center;
+      }
+      .logo {
+        width: 70px;
+        height: 70px;
+        background-color: #dee2e6;
+        border-radius: 10px;
+        margin-left: -7px;
+        padding: 2px;
+        margin-top: -2px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container" id="print">
+      <div class="heading">
+        <div class="logo">
+          <img
+            src="https://static.wixstatic.com/media/8b8f2d_46f5f8aaf3ad4e93b98f0e8a390e19e8~mv2.png/v1/fill/w_117,h_117,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Overlay%20Dark%20shadowed%20compressed.png"
+            style="height: 80px; width: 80px; margin-left: -5px"
+          />
+        </div>
+        <h1>Calanjiyam</h1>
+        <div class="details">
+          <p>admin@calanjiyam.com</p>
+          <p>+918667289012</p>
+        </div>
+      </div>
+      <div class="quotation-details">
+        <h2>Qid: 1</h2>
+        <p class="email">Email Address: arun@crisscrosstamizh.in</p>
+        <div class="q-details">
+          <p>Customer Name: Arun</p>
+          <p>Address: Salem,TN</p>
+          <p>Phone Number: 7092866728</p>
+        </div>
+      </div>
+      <div class="bill">
+        <h2>Ordered Items</h2>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mouse</td>
+                <td>450</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Dell CPU</td>
+                <td>12909</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>RAM 8gb</td>
+                <td>3200</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>RAM 16gb</td>
+                <td>5900</td>
+              </tr>
+              <!-- Add more rows for additional products -->
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2" class="total">Sub Total</td>
+                <td class="Sub-total">9085</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="total">Tax Total</td>
+                <td class="Sub-total">3256</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="total">Grand Total</td>
+                <td class="Sub-total">10,985</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <button class="button" id="downloadBtn" onclick="printpage()">
+          View Bill
+        </button>
+      </div>
+      <div class="footer">
+        <p>
+          © Copyright 2023 - Calanjiyam. All rights reserved.
+          <a href="https://www.calanjiyam.com/">www.calanjiyam.com</a>
+        </p>
+      </div>
+    </div>
+    <script>
+      function printpage() {
+            let htmlElement = document.getElementById('print');
+            html2pdf().from(htmlElement).save('demo.pdf');
+        };
+    </script>
+  </body>
+</html>
